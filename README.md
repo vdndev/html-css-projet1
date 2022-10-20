@@ -50,7 +50,7 @@
       - Titre
       - Reseaux sociaux
     - menu
-      -
+      - Lien vers les pages
     - contenu
       - qui sommes nous
       - les chats
