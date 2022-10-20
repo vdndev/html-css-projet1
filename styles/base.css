@@ -1,0 +1,26 @@
+:root {
+    --primary-color-dark: #03989e;
+    --primary-color: #03989e;
+    --primary-color-light: #03989e;
+
+    --secondary-color-dark: rgb(250, 191, 39);
+    --secondary-color: rgb(250, 191, 39);
+    --secondary-color-light: rgb(250, 191, 39);
+
+    --primary-text-dark: #000;
+    --primary-text: #333;
+    --primary-text-light: #555;
+
+    --secondary-text-dark-dark: #BBB;
+    --secondary-text: #EEE;
+    --secondary-text-light: #FFF;
+
+    --border-color-dark: #000;
+    --border-color-light: #CCC;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
