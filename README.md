@@ -70,31 +70,39 @@
     - Nom
     - Prenom
     - adresse
+      - numero
+      - rue
+      - complement
+      - code postal
+      - ville
     - email
     - telephone
   - Section animal
     - nom
     - age
-    - type chat
-    - provenance
-    - pour adoption/gardiennage
-    - vaccination
-    - puce
+    - race
+    - provenance (select: rue, proprietaire)
+    - type de prestation (select: adoption, gardiennage)
+    - date de debut de gardiennage
+    - date de fin du gardiennage
+    - vaccination (checkbox)
+    - puce (checkbox)
     - maladies
+    - fichier photo
 
 ### Wireframes
 
 - Mobiles
-  - [Accueil]()
-  - [Gallerie]()
-  - [Blog]()
-  - [Formulaire]()
+  - [Accueil](https://wireframe.cc/bBqhcg)
+  - [Gallerie](https://wireframe.cc/4TqDBP)
+  - [Blog](https://wireframe.cc/7jgwmj)
+  - [Formulaire](https://wireframe.cc/KCeNLo)
 
 - Desktops
   - [Accueil](https://wireframe.cc/Niyq44)
-  - [Gallerie]()
+  - [Gallerie](https://wireframe.cc/kNf4Jp)
   - [Blog](https://wireframe.cc/qPSFOe)
-  - [Formulaire]()
+  - [Formulaire](https://wireframe.cc/Scnp6q)
 
 ### Liens des sources
 
