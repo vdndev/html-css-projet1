@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Formulaire.css">
+    <title>
+        <Document>Adopte un chat en Occitanie</Document>
+    </title>
+</head>
+
+<header class="appbar">
+    <img src="chat.png" alt="chat">
+    <h1>Adoption<br> Refuge<br> centre de soin </h1>
+    <p class="logo"><img src="facebook.png" alt="chat"><img src="instagram.png" alt="chat"></p>
+
+
+</header>
+
+<body>
+    <form method="GET" action="controller/subscribe.php">
+        <fieldset>
+            <legend>Section propriétaire</legend>
+            <label for="surname">Prénom : </label>
+            <input type="text" id="surname" name="surname" minlength="2" maxlength="20" size="50"
+                placeholder="Veuillez saisir votre prénom">
+            <br>
+            <label for="name">Nom : </label>
+            <input type="text" id="name" name="name" minlength="2" maxlength="20" size="50"
+                placeholder="Veuillez saisir votre nom">
+            <br>
+            <label for="mail">Email : </label>
+            <input type="email" id="mail" name="mail" minlength="5" maxlength="50" size="50"
+                placeholder="Veuillez saisir votre email">
+            <br>
+            <label for="mobile"> Numéro: </label>
+            <input type="tel" id="mobile" name="mobile" minlength="5" maxlength="20" size="50"
+                placeholder="Veuillez saisir votre numéro de Téléphone">
+            <br>
+            <label for="review">Laissez un commentaire</label>
+            <br>
+            <textarea rows="10" col="70"></textarea>
+            <br>
+            <input type="submit" value="Envoyer" />
+        </fieldset>
+        <fieldset>
+            <legend>Section chat</legend>
+            <br>
+            <label for="name">Nom : </label>
+            <input type="text" id="name" name="name" minlength="2" maxlength="20" size="50"
+                placeholder="Veuillez saisir le nom du chat">
+            <br>
+            <label for="age">Age:</label>
+            <input type="Age" id="Age" placeholder="Veuillez saisir votre age">
+            <br>
+            <label for="Race de chat">Race de chat : </label>
+            <input type="text" id="chat" name="race de chat" minlength="5" maxlength="50" size="50">
+            <br>
+            <label for="Provenance">Provenance?</label>
+            <select name="provenance" id="provenance">
+                <option value="option1">Propriétaire</option>
+                <option value="option2">De la rue</option>
+            </select>
+            <br>
+            <label for="adoption">Adoption ou gardiennage?</label>
+            <select name="adoption" id="adoption">
+                <option value="option1">Adoption</option>
+                <option value="option2">Gardiennage</option>
+            </select>
+            <br>
+            <label for="durée">Combien de jours?: </label>
+            <input type="text" id="durée" name="durée" minlength="5" maxlength="50" size="50">
+            <br>
+            <label for="puce"> Est-il pucé?:</label>
+            <input type="checkbox" id="puce" name="puce" />
+            <br>
+            <label for="vaccin">Est-il vacciné?:</label>
+            <input type="checkbox" id="vaccin" name="vaccin" />
+            <br>
+            <label for="maladie">Maladies connues:</label>
+            <br>
+            <textarea rows="5" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Envoyer" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
+</body>
+
+</html>
