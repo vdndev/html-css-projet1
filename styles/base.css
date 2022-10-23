@@ -1,21 +1,18 @@
-:root {
-    --primary-color-dark: #03989e;
-    --primary-color: #03989e;
-    --primary-color-light: #03989e;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-    --secondary-color-dark: rgb(250, 191, 39);
-    --secondary-color: rgb(250, 191, 39);
-    --secondary-color-light: rgb(250, 191, 39);
+:root {
+    --primary-color: #03989e;
+    --secondary-color: #FABF27;
 
     --primary-text-dark: #000;
     --primary-text: #333;
     --primary-text-light: #555;
 
-    --secondary-text-dark-dark: #BBB;
+    --secondary-text-dark: #BBB;
     --secondary-text: #EEE;
     --secondary-text-light: #FFF;
 
-    --border-color-dark: #000;
+    --border-color-dark: #282828;
     --border-color-light: #CCC;
 }
 
@@ -23,4 +20,462 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    padding: 0 16px;
+    margin: 8px 0;
+
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+
+    color: var(--primary-text);
+
+    letter-spacing: 0.5px;
+
+    line-height: 1.4em;
+}
+
+a {
+    font-style: italic;
+    color: var(--primary-text);
+    text-decoration: underline;
+}
+a:link {
+    color: var(--primary-text);
+}
+a:visited {
+    color: var(--primary-text);
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: light;
+    letter-spacing: -1.5px;
+}
+h2 {
+    font-size: 60px;
+    font-weight: light;
+    letter-spacing: -0.5px;
+}
+h3 {
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 0px;
+}
+h4 {
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+}
+h5 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0px;
+}
+h6 {
+    font-size: 20px;
+    font-weight: medium;
+    letter-spacing: 0.15px;
+}
+
+caption {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+}
+
+p {
+    padding-top: 16px;
+}
+
+em {
+    color: var(--primary-color);
+}
+input, button, select, textarea {
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    border: 1px solid var(--border-color-light);
+}
+
+button, input[type="submit"], input[type="reset"] {
+    margin: 8px;
+    padding: 0 16px;
+    
+    min-width: 64px;
+    height: 36px;
+
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+fieldset {
+    margin: 16px 8px;
+    padding: 16px 8px;
+    border-radius: 8px;
+    border-color: var(--border-color-light);
+}
+
+legend {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    color: var(--border-color-light);
+}
+
+/* Card classes */
+.card {
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card > .card--title {
+    padding: 0 16px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+    border-radius: 4px 4px 0 0;
+}
+
+.card > .card--title > *:not(img) {
+    text-align: center;
+}
+
+.card > .card--body {
+    padding: 16px 16px;
+}
+
+.card > .card--body > aside img {
+    width: 100%;
+    height: 194px;
+}
+
+/* list-group classes */
+.list-group {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+.list-group--item {
+    padding: 16px 12px;
+
+    width: 100%;
+    height: 48px;
+
+    text-align: center;
+    
+    border-bottom: 1px solid var(--border-color-light);
+}
+
+.list-group--item  > a {
+    text-decoration: none;
+}
+
+.list-group--item  > a:link {
+    color: var(--primary-text);
+}
+
+.list-group--item  > a:visited {
+    color: var(--primary-text);
+}
+
+/* Input field classes */
+.field-group {
+    width: 280px;
+    margin-bottom: 16px;
+}
+
+.field {
+    padding: 8px 16px;
+
+    border: 1px solid var(--border-color-light);
+    border-radius: 4px;
+}
+
+.field--label {
+    display: block;
+    
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+
+    color: var(--primary-text-light);
+}
+
+.field--input {
+    display: block;
+
+    width: 100%;
+    height: 24px;
+
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+
+    color: var(--primary-text);
+}
+
+.field--select {
+    display: block;
+
+    width: 100%;
+    height: 24px;
+
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+
+    background-color: transparent;
+    color: var(--primary-text);
+}
+
+.field--textarea {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+
+    color: var(--primary-text);
+}
+
+.field--checkbox {
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-color);
+}
+
+.field--helper {
+    padding: 0 16px;
+
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+}
+
+/* Helper classes */
+.color-red {
+    color: red;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-around {
+    justify-content: space-around;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+/* Specialised classes */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "appbar"
+                         "sidebar"
+                         "content";
+    gap: 16px;
+}
+
+.appbar {
+    grid-area: appbar;
+
+    padding: 0 16px;
+    margin-bottom: 16px;
+
+    width: 100%;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.appbar--title {
+    display: flex;
+    align-items: center;
+}
+
+.appbar--title > h1 {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.appbar--title img {
+    width: 96px;
+    height: 96px;
+    border-radius: 8px;
+}
+
+.appbar--socials {
+    padding: 16px 0;
+}
+
+.appbar--socials > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.content > article {
+    margin-top: 16px;
+}
+.content > article:first-child {
+    margin-top: 0;
+}
+
+.logo {
+    width: 96px;
+    height: 96px;
+}
+
+.socials {
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+}
+
+.socials > a {
+    padding: 8px;
+
+    border-radius: 4px;
+}
+.socials > a:link {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.socials > a:visited {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.gallery > article {
+    margin: 0;
+    padding-bottom: 8px;
+
+    width: 344px;
+
+    border: 1px solid var(--border-color-light);
+    border-radius: 8px;
+}
+
+.gallery > article img {
+    display: block;
+
+    margin-bottom: 16px;
+
+    width: 344px;
+    height: 194px;
+
+    border-radius: 8px 8px 0 0;
+}
+
+.gallery > article h6 {
+    margin-left: 16px;
+}
+
+.gallery > article p {
+    margin-left: 16px;
+
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.25;
+}
+
+.btn-float {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+
+    padding: 16px;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: var(--secondary-color);
+
+    border-radius: 28px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    z-index: 10;
+}
+
+.btn-float > div {
+    width: 24px;
+    height: 24px;
+
+    text-align: center;
+    
+    font-size: 20px;
+    font-weight: medium;
+    letter-spacing: 1.25px;
+    text-transform: capitalize;
+}
+
+.btn-float > div > a:link {
+    color: var(--primary-text-dark);
+}
+
+.btn-float > div > a:visited {
+    color: var(--primary-text-dark);
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.pub {
+    width: 244px;
+    height: 433px;
 }

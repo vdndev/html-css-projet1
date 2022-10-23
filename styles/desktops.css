@@ -1,0 +1,73 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.8fr;
+    grid-template-areas: "appbar appbar appbar appbar"
+                         "content content content sidebar";
+    gap: 16px;
+}
+
+.appbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appbar--title > h1 {
+    font-size: 64px;
+}
+
+.appbar--title img {
+    width: 128px;
+    height: 128px;
+    border-radius: 8px;
+}
+
+.appbar--socials {
+    align-self: center;
+    padding: 16px 0;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.card > .card--title {
+    border-radius: 8px 8px 0 0;
+}
+
+.card > .card--title > img {
+    border-radius: 8px 8px 0 0;
+}
+
+.card > .card--body > aside img {
+    width: 194px;
+    height: 194px;
+    margin-left: 16px;
+}
+
+.content article:nth-child(even) > .card--body {
+    flex-direction: row-reverse;
+}
+
+.content article:nth-child(even) > .card--body > aside img {
+    margin-right: 16px;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.aside-img {
+    flex-direction: row;
+}
+
+.content > article:nth-child(even) aside {
+    order: 1;
+}

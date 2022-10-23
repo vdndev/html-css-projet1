@@ -1,93 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="Formulaire.css">
-    <title>
-        <Document>Adopte un chat en Occitanie</Document>
-    </title>
-</head>
+        <link rel="stylesheet" href="styles/icon-font/lineicons.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/tablets.css" media="only screen and (min-width: 600px) and (max-width: 1080px)">
+        <link rel="stylesheet" href="styles/desktops.css" media="only screen and (min-width: 1080px)">
 
-<header class="appbar">
-    <img src="chat.png" alt="chat">
-    <h1>Adoption<br> Refuge<br> centre de soin </h1>
-    <p class="logo"><img src="facebook.png" alt="chat"><img src="instagram.png" alt="chat"></p>
+        <title>Adopte un chat en Occitanie</title>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="appbar">
+                <div class="appbar--title">
+                    <a href="index.html"><img src="images/chat.png" alt="Logo association adopte un chat en occitanie"></a>
+                    <h1>Adopte un chat en occitanie</h1>
+                </div>
+                <div class="appbar--socials">
+                    <ul>
+                        <li class="socials"><a href="https://fr.facebook.com"><i class="lni lni-facebook-original"></i></a></li>
+                        <li class="socials"><a href="https://www.twitter.com"><i class="lni lni-twitter-original"></i></a></li>
+                        <li class="socials"><a href="https://www.instagram.com"><i class="lni lni-instagram-original"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar">
+                <section class="card">
+                    <header class="card--title">
+                        <h6>Menu</h6>
+                    </header>
+                    <nav class="card--body">
+                        <ul class="list-group">
+                            <li class="list-group--item"><a href="index.html">Accueil</a></li>
+                            <li class="list-group--item"><a href="blog.html">Blog</a></li>
+                            <li class="list-group--item"><a href="formulaire.html">Formulaire</a></li>
+                            <li class="list-group--item"><a href="gallerie.html">Gallerie</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <header class="card--title">
+                        <h6>Formulaire d'inscription d'un chat dans notre établissement</h6>
+                    </header>
+                    <div class="card--body">
+                        <form method="POST" action="controller/register-cat.php">
+                            <div class="flex-form">
+                                <fieldset>
+                                    <legend>Section propriétaire</legend>
+        
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="name" class="field--label">Nom</label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                class="field--input"
+                                                minlength="2"
+                                                maxlength="20"
+                                                required
+                                                placeholder="Ex: Durand">
+                                        </div>
+                                        <p class="field--helper color-red">Champ Obligatoire</p>
+                                    </div>
 
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="firstname" class="field--label">Prénom</label>
+                                            <input
+                                                type="text"
+                                                id="firstname"
+                                                name="firstname"
+                                                class="field--input"
+                                                minlength="2"
+                                                maxlength="20"
+                                                required
+                                                placeholder="Ex: Thomas">
+                                        </div>
+                                        <p class="field--helper color-red">Champ Obligatoire</p>
+                                    </div>
+        
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="mail" class="field--label">Email</label>
+                                            <input
+                                                type="email"
+                                                id="mail"
+                                                name="mail"
+                                                class="field--input"
+                                                minlength="5"
+                                                maxlength="50"
+                                                required
+                                                placeholder="Ex: addresse@fai.fr">
+                                        </div>
+                                        <p class="field--helper color-red">Champ Obligatoire</p>
+                                    </div>
+        
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="mobile" class="field--label"> Numéro: </label>
+                                            <input
+                                                type="tel"
+                                                id="mobile"
+                                                name="mobile"
+                                                class="field--input"
+                                                minlength="5"
+                                                maxlength="20"
+                                                placeholder="Ex: 06 xx xx xx xx">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Section chat</legend>
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="catname" class="field--label">Nom</label>
+                                            <input
+                                                type="text"
+                                                id="catname"
+                                                name="catname"
+                                                class="field--input"
+                                                minlength="2"
+                                                maxlength="20"
+                                                required
+                                                placeholder="Ex: Felix">
+                                        </div>
+                                        <p class="field--helper color-red">Champ Obligatoire</p>
+                                    </div>
+        
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="age" class="field--label">Age</label>
+                                            <input
+                                                type="number"
+                                                id="age"
+                                                name="age"
+                                                class="field--input"
+                                                placeholder="Ex: 5">
+                                        </div>
+                                    </div>
+        
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="race" class="field--label">Race</label>
+                                            <input type="text"
+                                                id="race"
+                                                name="race"
+                                                class="field--input"
+                                                minlength="5"
+                                                maxlength="50"
+                                                placeholder="Ex: Siamoi">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="provenance" class="field--label">Provenance</label>
+                                            <select name="provenance" id="provenance" class="field--select" size="1" required>
+                                                <option label="Choisissez ..."></option>
+                                                <option value="1">Propriétaire</option>
+                                                <option value="2">De la rue</option>
+                                            </select>
+                                        </div>
+                                        <p class="field--helper color-red">Champ Obligatoire</p>
+                                    </div>
+        
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="puce" class="field--label">Votre chat est-il pucé?</label>
+                                            <input type="checkbox" id="puce" name="puce" class="field--checkbox">
+                                        </div>
+                                    </div>
+        
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="vaccin" class="field--label">Votre chat est-il vacciné?</label>
+                                            <input type="checkbox" id="vaccin" name="vaccin" class="field--checkbox">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="comment" class="field--label">Commentaires</label>
+                                            <textarea id="comment" name="comment" rows="5" cols="50" class="field--textarea"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="adoption" class="field--label">Type de séjour</label>
+                                            <select name="adoption" id="adoption" class="field--select" size="1" required>
+                                                <option label="Choisissez ..."></option>
+                                                <option value="1">Adoption</option>
+                                                <option value="2">Gardiennage</option>
+                                            </select>
+                                        </div>
+                                        <p class="field--helper color-red">Champ Obligatoire</p>
+                                    </div>
 
-</header>
-
-<body>
-    <form method="GET" action="controller/subscribe.php">
-        <fieldset>
-            <legend>Section propriétaire</legend>
-            <label for="surname">Prénom : </label>
-            <input type="text" id="surname" name="surname" minlength="2" maxlength="20" size="50"
-                placeholder="Veuillez saisir votre prénom">
-            <br>
-            <label for="name">Nom : </label>
-            <input type="text" id="name" name="name" minlength="2" maxlength="20" size="50"
-                placeholder="Veuillez saisir votre nom">
-            <br>
-            <label for="mail">Email : </label>
-            <input type="email" id="mail" name="mail" minlength="5" maxlength="50" size="50"
-                placeholder="Veuillez saisir votre email">
-            <br>
-            <label for="mobile"> Numéro: </label>
-            <input type="tel" id="mobile" name="mobile" minlength="5" maxlength="20" size="50"
-                placeholder="Veuillez saisir votre numéro de Téléphone">
-            <br>
-            <label for="review">Laissez un commentaire</label>
-            <br>
-            <textarea rows="10" col="70"></textarea>
-            <br>
-            <input type="submit" value="Envoyer" />
-        </fieldset>
-        <fieldset>
-            <legend>Section chat</legend>
-            <br>
-            <label for="name">Nom : </label>
-            <input type="text" id="name" name="name" minlength="2" maxlength="20" size="50"
-                placeholder="Veuillez saisir le nom du chat">
-            <br>
-            <label for="age">Age:</label>
-            <input type="Age" id="Age" placeholder="Veuillez saisir votre age">
-            <br>
-            <label for="Race de chat">Race de chat : </label>
-            <input type="text" id="chat" name="race de chat" minlength="5" maxlength="50" size="50">
-            <br>
-            <label for="Provenance">Provenance?</label>
-            <select name="provenance" id="provenance">
-                <option value="option1">Propriétaire</option>
-                <option value="option2">De la rue</option>
-            </select>
-            <br>
-            <label for="adoption">Adoption ou gardiennage?</label>
-            <select name="adoption" id="adoption">
-                <option value="option1">Adoption</option>
-                <option value="option2">Gardiennage</option>
-            </select>
-            <br>
-            <label for="durée">Combien de jours?: </label>
-            <input type="text" id="durée" name="durée" minlength="5" maxlength="50" size="50">
-            <br>
-            <label for="puce"> Est-il pucé?:</label>
-            <input type="checkbox" id="puce" name="puce" />
-            <br>
-            <label for="vaccin">Est-il vacciné?:</label>
-            <input type="checkbox" id="vaccin" name="vaccin" />
-            <br>
-            <label for="maladie">Maladies connues:</label>
-            <br>
-            <textarea rows="5" cols="50"></textarea>
-            <br>
-            <input type="submit" value="Envoyer" />
-        </fieldset>
-    </form>
-</body>
-
-</html>
-
-</body>
-
+                                    <p>Durée du séjour</p>
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="staybeg" class="field--label">Debut</label>
+                                            <input type="date" id="staybeg" name="staybeg" class="field--input" required>
+                                        </div>
+                                        <p class="field--helper color-red">Champ Obligatoire</p>
+                                    </div>
+                                    <div class="field-group">
+                                        <div class="field">
+                                            <label for="stayend" class="field--label">Fin</label>
+                                            <input type="date" id="stayend" name="stayend" class="field--input" required>
+                                        </div>
+                                        <p class="field--helper color-red">Champ Obligatoire</p>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="container-flex flex-justify-center">
+                                <input type="submit" value="Envoyer">
+                                <input type="reset" value="Effacer">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-float">
+            <div>
+                <a href="#"><i class="lni lni-angle-double-up"></i></a>
+            </div>
+        </div>
+    </body>
 </html>
