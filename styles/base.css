@@ -391,6 +391,7 @@ legend {
     display: grid;
     grid-template-columns: 1fr;
     gap: 8px;
+    padding: 8px;
 }
 
 .gallery > article {
