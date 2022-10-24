@@ -8,7 +8,7 @@
   - [x] Listes
   - [x] Formulaires
   - [x] Images
-  - [ ] Videos
+  - [x] Videos
 
 - CSS
   - [x] Selecteurs

@@ -400,7 +400,7 @@ legend {
     border-radius: 8px;
 }
 
-.gallery > article img {
+.gallery > article img, .gallery > article iframe {
     display: block;
 
     margin-bottom: 16px;
