@@ -94,6 +94,7 @@ p {
 em {
     color: var(--primary-color);
 }
+
 input, button, select, textarea {
     border-radius: 8px;
     border: none;
@@ -127,6 +128,7 @@ ul {
 fieldset {
     margin: 16px 8px;
     padding: 16px 8px;
+    
     border-radius: 8px;
     border-color: var(--border-color-light);
 }
@@ -136,6 +138,7 @@ legend {
     font-weight: normal;
     letter-spacing: 0.4px;
     line-height: 16px;
+
     color: var(--border-color-light);
 }
 
@@ -147,6 +150,7 @@ legend {
 
 .card > .card--title {
     padding: 0 16px;
+
     background-color: var(--primary-color);
     color: var(--secondary-color);
 
@@ -186,14 +190,6 @@ legend {
 
 .list-group--item  > a {
     text-decoration: none;
-}
-
-.list-group--item  > a:link {
-    color: var(--primary-text);
-}
-
-.list-group--item  > a:visited {
-    color: var(--primary-text);
 }
 
 /* Input field classes */

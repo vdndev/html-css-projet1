@@ -24,7 +24,7 @@
 
 ### Nom du site
 
-**Adoptunchatenoccitanie.com**
+**Adoptunchatenoccitanie.fr**
 
 ### Concurrence/exemple
 
