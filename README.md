@@ -3,19 +3,19 @@
 ## Objectifs du TP
 
 - HTML
-  - [ ] Balises semantiques
-  - [ ] Liens
-  - [ ] Listes
-  - [ ] Formulaires
-  - [ ] Images
+  - [x] Balises semantiques
+  - [x] Liens
+  - [x] Listes
+  - [x] Formulaires
+  - [x] Images
   - [ ] Videos
 
 - CSS
-  - [ ] Selecteurs
-  - [ ] Grid/Flex
-  - [ ] margin/padding
-  - [ ] position
-  - [ ] media queries
+  - [x] Selecteurs
+  - [x] Grid/Flex
+  - [x] margin/padding
+  - [x] position
+  - [x] media queries
 
 - Equipe
   - [X] Bonne humeur et travail collaboratif
